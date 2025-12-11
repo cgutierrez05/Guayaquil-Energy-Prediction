@@ -4,7 +4,6 @@ Este proyecto predice el consumo de energía eléctrica mensual en la Unidad de 
 ## **Tecnologías utilizadas**
 - **Python** (Pandas, NumPy, Statsmodels)
 - **ARIMA/SARIMA** para predicción de series temporales
-- **Streamlit/Tkinter** para la interfaz de usuario
 
 ## **Objetivo del Proyecto**
 El objetivo es crear un modelo predictivo para **predecir el consumo de energía eléctrica** en **Guayaquil** para el próximo mes. El modelo se entrena con datos históricos de **facturación de energía** y **producción nacional** de energía eléctrica.
