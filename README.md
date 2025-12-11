@@ -12,7 +12,7 @@ El objetivo es crear un modelo predictivo para **predecir el consumo de energía
 - **`clean_bnee.py`**: Script para limpiar y preprocesar los datos del Balance Nacional de Energía Eléctrica (BNEE).
 - **`clean_facturacion.py`**: Script para limpiar y procesar los datos de facturación de energía de CNEL - Guayaquil.
 - **`clean_functions.py`**: Script que contiene funciones generales para uso en ambas limpiezas.
-- **`modelo.py`**: Script para entrenar el modelo y generar las predicciones.
+- **`modelo_predictivo.py`**: Script para entrenar el modelo y generar las predicciones.
 - **`interfaz_prediccion.py`**: Interfaz de usuario para ingresar un mes-año y obtener una predicción de consumo de energía.
 - **`data_clean/`**: Carpeta con los datasets limpios listos para usar.
 - **`data_raw/`**: Carpeta con los archivos originales descargados.
