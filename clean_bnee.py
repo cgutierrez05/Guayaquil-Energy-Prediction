@@ -6,6 +6,26 @@ DATA_PATH = "./data_raw/BNEE/"
 OUTPUT_PATH = "./data_clean/"
 os.makedirs(OUTPUT_PATH, exist_ok=True)
 
+def clean_value(val):
+    #Convierte texto 1.234,56 a float 1234.56
+    if pd.isna(val): return 0.0
+    s = str(val).strip()
+    if not s: 
+        return 0.0
+    # Quitar caracteres que no son numeros
+    s = s.replace("%", "").replace(" ", "")
+    
+    # Manejo de formatos con punto y coma
+    if "." in s and "," in s:
+        s = s.replace(".", "").replace(",", ".")
+    elif "," in s:
+        s = s.replace(",", ".")
+        
+    try:
+        return float(s)
+    except:
+        return 0.0
+
 def process_bnee(file):
     print(f"[PROCESANDO] {os.path.basename(file)}...", end=" ")
     
